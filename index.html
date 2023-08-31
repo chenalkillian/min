@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <img src="logo.jfif" alt="">
+        <input class="searchbar" type="text" name="search" placeholder="Search ">
+        <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="OK" class="ok">
+
+
+    </div>
+    <div class="ham">
+        <img class="mn" src="menu-btn.png" alt="">
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".mn")
+    const navLinks = document.querySelector(".container")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile')
+    })
+</script>
+
+</html>
